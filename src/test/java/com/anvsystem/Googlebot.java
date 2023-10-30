@@ -11,14 +11,15 @@ public class Googlebot
 	public static void main(String []args) throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver",
-				"G:\\Data stuacture java\\Selinium\\binary\\chromedriver.exe");
+				"G:\\Data stuacture java\\Selinium\\binary\\chromedriver.exe");//this is driver chrome use to open the chrome 
 		
-		WebDriver driver =new ChromeDriver();
-		driver.get("https://www.google.com");
-		driver.findElement(By.name("q")).sendKeys("Automation");
-		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		
+		WebDriver driver =new ChromeDriver();//class of chrome of driver
+		driver.get("https://www.google.com");//enter the link to open the web page
+		driver.findElement(By.name("q")).sendKeys("Automation");//search box unique id to search and what search
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);//operaton is performed which and target
 		Thread.sleep(8000);
-		driver.quit();
+		driver.quit();//need to quit browser because consume RAM
 		
 	}
 }

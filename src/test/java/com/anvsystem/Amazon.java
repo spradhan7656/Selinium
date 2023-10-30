@@ -13,9 +13,9 @@ public class Amazon
 				"G:\\Data stuacture java\\Selinium\\binary\\chromedriver.exe");
 		
 		WebDriver driver =new ChromeDriver();
-		driver.get("https://www.amazon.in/?&ext_vrnc=hi&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=58355126069&hvpone=&hvptwo=&hvadid=676742234347&hvpos=&hvnetw=g&hvrand=5696833477237057646&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007828&hvtargid=kwd-10573980&hydadcr=14453_2367553");
-		driver.findElement(By.name("twotabsearchtextbox")).sendKeys("iphone");
-		driver.findElement(By.name("twotabsearchtextbox")).sendKeys(Keys.ENTER);
+		driver.get("https://www.amazon.com/");
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone");
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys(Keys.ENTER);
 		Thread.sleep(11000);
 		driver.quit();
 	}
