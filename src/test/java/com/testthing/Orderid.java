@@ -24,11 +24,12 @@ public class Orderid
 		driver.findElement(By.xpath("//input[@value='Buy Now']")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.id("card_nmuber")).sendKeys("4262613990873546");
-		Select month=new Select(driver.findElement(By.name("month")));
-		month.selectByVisibleText("09");
-		Select year=new Select(driver.findElement(By.name("year")));
+		Select month=new Select(driver.findElement(By.name("month")));//by the selecting class in the select tag
+		//so use the Select class
+		month.selectByVisibleText("09");//to use this the match the text
+		Select year=new Select(driver.findElement(By.name("year")));//by the selecting class in the Select tag so use the Select class
 		year.selectByVisibleText("2028");
-		driver.findElement(By.name("cvv_code")).sendKeys("032");
+		driver.findElement(By.name("cvv_code")).sendKeys("032");//the is use for enter the value
 		driver.findElement(By.xpath("//input[@name='submit']")).click();
 		Thread.sleep(7000);
 		

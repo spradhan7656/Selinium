@@ -12,10 +12,13 @@ public class Formbot
 {
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.edge.driver", "./binary/msedgedriver.exe");//./ are the root node path present the file
-		WebDriver driver=new EdgeDriver();
+		System.setProperty("webdriver.chrome.driver", "./binary/chromedriver.exe");//./ are the root node path present the file
+		WebDriver driver=new ChromeDriver();
+		
 		driver.manage().window().maximize();
 		driver.get("https://form-bot-anvsystems.pages.dev/");
+		
+		Thread.sleep(4000);
 		for(int i=0;i<10;i++)//use for 10 time to enter the random user 
 		{
 			//driver.findElement(By.name("firstname")).sendKeys("Santosh");
@@ -33,10 +36,11 @@ public class Formbot
 			
 			driver.findElement(By.tagName("button")).click();//only one button use tagName another case other property
 			
+			Thread.sleep(2000);
+			
 		}
 		
-		
-		Thread.sleep(22000);
+		Thread.sleep(3000);
 		driver.quit();
 		
 		
