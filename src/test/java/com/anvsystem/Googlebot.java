@@ -18,7 +18,7 @@ public class Googlebot
 		driver.get("https://www.google.com");//enter the link to open the web page
 		driver.findElement(By.name("q")).sendKeys("Automation");//search box unique id to search and what search
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);//operaton is performed which and target
-		Thread.sleep(8000);
+		Thread.sleep(22000);
 		driver.quit();//need to quit browser because consume RAM
 		
 	}

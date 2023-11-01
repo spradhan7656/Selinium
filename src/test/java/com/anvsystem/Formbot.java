@@ -5,14 +5,15 @@ import java.util.UUID;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Formbot 
 {
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver", "./binary/chromedriver.exe");//./ are the root node path present the file
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.edge.driver", "./binary/msedgedriver.exe");//./ are the root node path present the file
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://form-bot-anvsystems.pages.dev/");
 		for(int i=0;i<10;i++)//use for 10 time to enter the random user 
