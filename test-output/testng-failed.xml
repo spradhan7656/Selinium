@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mytest.test.LoginTest">
+      <class name="com.mytest.wait.Explicitdemo">
         <methods>
-          <include name="comapare"/>
+          <include name="explicitwaitdemo"/>
         </methods>
-      </class> <!-- com.mytest.test.LoginTest -->
+      </class> <!-- com.mytest.wait.Explicitdemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

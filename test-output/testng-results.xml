@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-01T18:16:13 IST" name="Default suite" finished-at="2023-11-01T18:16:13 IST" duration-ms="59">
+  <suite started-at="2023-11-02T13:44:20 IST" name="Default suite" finished-at="2023-11-02T13:45:09 IST" duration-ms="49037">
     <groups>
     </groups>
-    <test started-at="2023-11-01T18:16:13 IST" name="Default test" finished-at="2023-11-01T18:16:13 IST" duration-ms="59">
-      <class name="com.mytest.test.LoginTest">
-        <test-method signature="comapare()[pri:0, instance:com.mytest.test.LoginTest@72d1ad2e]" started-at="2023-11-01T18:16:13 IST" name="comapare" finished-at="2023-11-01T18:16:13 IST" duration-ms="16" status="PASS">
+    <test started-at="2023-11-02T13:44:20 IST" name="Default test" finished-at="2023-11-02T13:45:09 IST" duration-ms="49037">
+      <class name="com.mytest.wait.Explicitdemo">
+        <test-method signature="explicitwaitdemo()[pri:0, instance:com.mytest.wait.Explicitdemo@79e2c065]" started-at="2023-11-02T13:44:20 IST" name="explicitwaitdemo" finished-at="2023-11-02T13:45:09 IST" duration-ms="48951" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- comapare -->
-      </class> <!-- com.mytest.test.LoginTest -->
+        </test-method> <!-- explicitwaitdemo -->
+      </class> <!-- com.mytest.wait.Explicitdemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

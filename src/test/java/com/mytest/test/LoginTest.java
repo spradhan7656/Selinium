@@ -10,7 +10,8 @@ public class LoginTest
 	public void comapare()
 	{
 		String name="Santosh";
-		Assert.assertEquals("Santosh",name);// This method is insert is check actual and expected check
+
+		Assert.assertEquals("santosh",name);// This method is insert is check actual and expected check
 	}
 	
 }
