@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-02T14:14:39 IST" name="Default suite" finished-at="2023-11-02T14:15:24 IST" duration-ms="44212">
+  <suite started-at="2023-11-03T08:54:56 IST" name="Default suite" finished-at="2023-11-03T08:54:57 IST" duration-ms="1185">
     <groups>
     </groups>
-    <test started-at="2023-11-02T14:14:39 IST" name="Default test" finished-at="2023-11-02T14:15:24 IST" duration-ms="44212">
-      <class name="com.mytest.wait.Assignment_Explicitwait">
-        <test-method signature="explicitwaitdemo()[pri:0, instance:com.mytest.wait.Assignment_Explicitwait@1189dd52]" started-at="2023-11-02T14:14:39 IST" name="explicitwaitdemo" finished-at="2023-11-02T14:15:24 IST" duration-ms="44149" status="PASS">
+    <test started-at="2023-11-03T08:54:56 IST" name="Default test" finished-at="2023-11-03T08:54:57 IST" duration-ms="1185">
+      <class name="com.anvsystem.excelutils.Excelereader">
+        <test-method signature="testreader()[pri:0, instance:com.anvsystem.excelutils.Excelereader@595b007d]" started-at="2023-11-03T08:54:56 IST" name="testreader" finished-at="2023-11-03T08:54:57 IST" duration-ms="1138" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- explicitwaitdemo -->
-      </class> <!-- com.mytest.wait.Assignment_Explicitwait -->
+        </test-method> <!-- testreader -->
+      </class> <!-- com.anvsystem.excelutils.Excelereader -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

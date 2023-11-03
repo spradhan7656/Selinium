@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mytest.wait.Explicitdemo">
+      <class name="com.mytest.wait.Assingment_2_Implictwait">
         <methods>
-          <include name="explicitwaitdemo"/>
+          <include name="testWait"/>
         </methods>
-      </class> <!-- com.mytest.wait.Explicitdemo -->
+      </class> <!-- com.mytest.wait.Assingment_2_Implictwait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
