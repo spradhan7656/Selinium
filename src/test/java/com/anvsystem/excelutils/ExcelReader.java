@@ -16,8 +16,8 @@ public class ExcelReader
 			
 			XSSFWorkbook wb=new XSSFWorkbook(fis);//pass the file object in the xssf is class that help to open excel
 			
-			XSSFSheet sheet=wb.getSheet("Sheet1");//initilization the sheet
-			for(int i=0;i<4;i++)
+			XSSFSheet sheet=wb.getSheet("person");//initilization the sheet
+			for(int i=1;i<4;i++)
 			{
 				for(int j=0;j<4;j++)
 				{

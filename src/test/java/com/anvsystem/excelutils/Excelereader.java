@@ -21,24 +21,21 @@ public class Excelereader
 			
 			XSSFWorkbook wb=new XSSFWorkbook(fis);//pass the file object in the xssf is class that help to open excel
 			
-			XSSFSheet sheet=wb.getSheet("Sheet1");//initilization the sheet
-			int lastrow=sheet.getLastRowNum();
-			
+			XSSFSheet sheet=wb.getSheet("person");//initilization the sheet
+			int lastrow=sheet.getLastRowNum();//This return as the last data present row number
+			System.out.println(lastrow);
 			for(int i=0;i<=lastrow;i++)
 			{
 				XSSFRow row=sheet.getRow(i);
-				int lastcell=row.getLastCellNum();
-				for(int j=0;j<lastcell;j++)
+				int lastcell=row.getLastCellNum();//This is return as the last data present 
+ 				for(int j=0;j<lastcell;j++)
 				{
 					XSSFCell cell=row.getCell(j);
-					String data=cell.getStringCellValue();
+					String data=cell.getStringCellValue();//This is return the cell value
 					System.out.print(data+"\t");
 				}
 				System.out.println("\n");
 			}
-			
-			
-			System.out.println(lastrow);
 			
 			
 		} catch (FileNotFoundException e) {

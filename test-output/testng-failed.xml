@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mytest.wait.Assingment_2_Implictwait">
+      <class name="com.mytest.datatreven.LoginTest">
         <methods>
-          <include name="testWait"/>
+          <include name="loginWithCredentials" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- com.mytest.wait.Assingment_2_Implictwait -->
+      </class> <!-- com.mytest.datatreven.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -15,7 +15,7 @@ public class Uiinteractions
 		driver.manage().window().maximize();
 		driver.get("https://www.w3schools.com/");
 		driver.findElement(By.id("search2")).sendKeys("html");
-		
+		Thread.sleep(10000);
 		Actions actions =new Actions(driver);//this class use to some operation mouse releted perfomed
 		actions.moveToElement(driver.findElement(By.xpath("//a[@id='navbtn_tutorials']")))
 		.build()
