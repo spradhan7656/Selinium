@@ -5,7 +5,7 @@
     <classes>
       <class name="com.mytest.datatreven.LoginTest">
         <methods>
-          <include name="loginWithCredentials" invocation-numbers="0 1 2 3"/>
+          <include name="loginWithCredentials" invocation-numbers="1 2"/>
         </methods>
       </class> <!-- com.mytest.datatreven.LoginTest -->
     </classes>

@@ -1,6 +1,7 @@
 package com.mytest.datatreven;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -44,6 +45,7 @@ public class LoginTest
 	@Test(dataProvider="loginData")//dataProvider is use to searching who is provide the data and very importnt concept is both dataprovider and name attribute will same the fatch the data
 	public void loginWithCredentials(String userId,String password) throws InterruptedException// if the data provider method
 	{
+		
 		setupBrowser("chrome");
 		navigate("https://demo.guru99.com/v4/index.php");
 		type(By.name("uid"),userId);
@@ -63,7 +65,7 @@ public class LoginTest
 		
 		
 		Thread.sleep(3000);
-		Assert.assertEquals(driver.getTitle()," Guru99 Bank Manager HomePage ");
+		Assert.assertEquals(driver.getTitle(),"Guru99 Bank Manager HomePage");
 		
 		driver.quit();
 		
