@@ -1,195 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-05T09:38:39 IST" name="Default suite" finished-at="2023-11-05T09:41:04 IST" duration-ms="144790">
+  <suite started-at="2023-11-05T16:39:15 IST" name="ExecutionflowSuite" finished-at="2023-11-05T16:40:52 IST" duration-ms="96470">
     <groups>
     </groups>
-    <test started-at="2023-11-05T09:38:39 IST" name="Default test" finished-at="2023-11-05T09:41:04 IST" duration-ms="144790">
-      <class name="com.mytest.datatreven.LoginTest">
-        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.mytest.datatreven.LoginTest@49139829]" started-at="2023-11-05T09:38:41 IST" name="loginWithCredentials" data-provider="loginData" finished-at="2023-11-05T09:39:08 IST" duration-ms="27057" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr535530]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pEsEraq]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-11-05T16:39:15 IST" name="Test" finished-at="2023-11-05T16:40:52 IST" duration-ms="96470">
+      <class name="com.mytest.executionflow.PaymentflowTest">
+        <test-method is-config="true" signature="testSetupStep()[pri:0, instance:com.mytest.executionflow.PaymentflowTest@4562e04d]" started-at="2023-11-05T16:39:15 IST" name="testSetupStep" finished-at="2023-11-05T16:39:15 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithCredentials -->
-        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.mytest.datatreven.LoginTest@49139829]" started-at="2023-11-05T09:39:08 IST" name="loginWithCredentials" data-provider="loginData" finished-at="2023-11-05T09:39:26 IST" duration-ms="17932" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr535530]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pEsEraqh]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=119.0.6045.106): User or Password is not valid
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ce2dad4974b16615267d756ceae64f0, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52190/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ce2dad4974b16615267d756ceae64f0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=119.0.6045.106): User or Password is not valid
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ce2dad4974b16615267d756ceae64f0, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52190/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ce2dad4974b16615267d756ceae64f0
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
-at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:309)
-at com.mytest.datatreven.LoginTest.loginWithCredentials(LoginTest.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        </test-method> <!-- testSetupStep -->
+        <test-method is-config="true" signature="createNewBrowser()[pri:0, instance:com.mytest.executionflow.PaymentflowTest@4562e04d]" started-at="2023-11-05T16:39:15 IST" name="createNewBrowser" finished-at="2023-11-05T16:39:54 IST" duration-ms="38461" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithCredentials -->
-        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.mytest.datatreven.LoginTest@49139829]" started-at="2023-11-05T09:39:26 IST" name="loginWithCredentials" data-provider="loginData" finished-at="2023-11-05T09:40:02 IST" duration-ms="36129" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr5355304]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pEsEraqy]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=119.0.6045.106): User or Password is not valid
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [571fa1bcfce5bca397458ad1f5715f91, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52253}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52253/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 571fa1bcfce5bca397458ad1f5715f91]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=119.0.6045.106): User or Password is not valid
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [571fa1bcfce5bca397458ad1f5715f91, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52253}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52253/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 571fa1bcfce5bca397458ad1f5715f91
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
-at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:309)
-at com.mytest.datatreven.LoginTest.loginWithCredentials(LoginTest.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        </test-method> <!-- createNewBrowser -->
+        <test-method signature="addIteamToCartTest()[pri:0, instance:com.mytest.executionflow.PaymentflowTest@4562e04d]" started-at="2023-11-05T16:39:54 IST" name="addIteamToCartTest" finished-at="2023-11-05T16:40:38 IST" duration-ms="44043" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithCredentials -->
-        <test-method signature="loginWithCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.mytest.datatreven.LoginTest@49139829]" started-at="2023-11-05T09:40:02 IST" name="loginWithCredentials" data-provider="loginData" finished-at="2023-11-05T09:41:04 IST" duration-ms="61467" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr5355304]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pEsEraq]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- addIteamToCartTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.mytest.executionflow.PaymentflowTest@4562e04d]" started-at="2023-11-05T16:40:38 IST" name="closeBrowser" finished-at="2023-11-05T16:40:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithCredentials -->
-      </class> <!-- com.mytest.datatreven.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="createNewBrowser()[pri:0, instance:com.mytest.executionflow.PaymentflowTest@4562e04d]" started-at="2023-11-05T16:40:38 IST" name="createNewBrowser" finished-at="2023-11-05T16:40:51 IST" duration-ms="12733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewBrowser -->
+        <test-method signature="checkoutTest()[pri:0, instance:com.mytest.executionflow.PaymentflowTest@4562e04d]" started-at="2023-11-05T16:40:51 IST" name="checkoutTest" finished-at="2023-11-05T16:40:51 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.mytest.executionflow.PaymentflowTest@4562e04d]" started-at="2023-11-05T16:40:51 IST" name="closeBrowser" finished-at="2023-11-05T16:40:52 IST" duration-ms="1139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.mytest.executionflow.PaymentflowTest -->
+    </test> <!-- Test -->
+  </suite> <!-- ExecutionflowSuite -->
 </testng-results>

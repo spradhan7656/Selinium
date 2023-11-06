@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mytest.datatreven.LoginTest">
+      <class name="com.mytest.executionflow.PaymentflowTest">
         <methods>
-          <include name="loginWithCredentials" invocation-numbers="1 2"/>
+          <include name="testSetupStep"/>
+          <include name="createNewBrowser"/>
+          <include name="checkoutTest"/>
+          <include name="addIteamToCartTest"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.mytest.datatreven.LoginTest -->
+      </class> <!-- com.mytest.executionflow.PaymentflowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
